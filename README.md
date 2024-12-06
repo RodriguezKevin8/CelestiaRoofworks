@@ -20,7 +20,7 @@ Antes de empezar, asegúrate de tener instalados los siguientes programas:
 Clona este repositorio a tu máquina local con el siguiente comando:
 
 ```bash
-git clone https://github.com/tuusuario/celestia-roofworks.git
+git clone https://github.com/RodriguezKevin8/CelestiaRoofworks.git
 ```
 
 ### **3. Clonar el Repositorio**
@@ -28,7 +28,7 @@ git clone https://github.com/tuusuario/celestia-roofworks.git
 Accede al directorio del proyecto e instala las dependencias necesarias usando npm:
 
 ```
-cd celestia-roofworks
+cd CelestiaRoofworks
 npm install
 
 ```
@@ -42,6 +42,11 @@ npm run dev
 ```
 
 Luego, abre tu navegador y navega a: http://localhost:4321
+
+### **4.1 🖥️ Previsualización del Sitio**
+
+Puedes previsualizar el sitio web en el siguiente enlace:
+https://celestialroofworks.netlify.app/
 
 ### **5. Cómo Detener el Proyecto**
 
@@ -59,10 +64,16 @@ El diseño del proyecto se centra en:
 
 ### **Tecnologías Utilizadas**
 
-- **Astro:** Framework para sitios web estáticos y rápidos.
-- **React:** Para componentes interactivos como el formulario de contacto.
-- **Tailwind CSS:** Para estilos rápidos y configurables.
-- **Google Maps Embed API:** Para mostrar ubicaciones interactivas.
+- **Astro:** Framework para sitios web estáticos y rápidos, ideal para optimizar el rendimiento y SEO.
+- **React:** Implementado en componentes interactivos como el formulario de contacto y la barra de navegación.
+- **Tailwind CSS:** Framework de diseño CSS para estilos rápidos, configurables y responsivos.
+- **Tailwind CSS Animated:** Extensión de Tailwind para agregar animaciones suaves y modernas en la página.
+- **Google Maps Embed API:** Integración para mostrar mapas interactivos y personalizados.
+- **Cloudflare R2:** Usado para el almacenamiento y distribución eficiente de recursos multimedia, como imágenes y videos.
+- **Web.dev:** Herramienta utilizada para evaluar el rendimiento, accesibilidad y mejores prácticas del sitio.
+- **Squoosh:** Utilizado para la optimización avanzada de imágenes, reduciendo su tamaño sin comprometer la calidad.
+
+Estas tecnologías y herramientas aseguran que **Celestia Roofworks** sea eficiente, estéticamente agradable y accesible para todos los usuarios.
 
 ### **7. 📂 Estructura del Proyecto**
 
