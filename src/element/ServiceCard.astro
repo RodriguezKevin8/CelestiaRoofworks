@@ -15,8 +15,15 @@ const { title, description, image } = Astro.props;
   />
   <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-lg">
     <h3 class="text-xl font-bold mb-4">{title}</h3>
-    <p class="text-center text-sm text-gray-300 px-4">
+    <p class="text-center text-sm text-gray-300 px-4 mb-4">
       {description}
     </p>
+    <a 
+      href="#proyectos" 
+      class="bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-emerald-600 transition-colors duration-300 font-lora"
+    >
+      Ver más proyectos
+    </a>
   </div>
+  
 </div>

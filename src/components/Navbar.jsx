@@ -16,6 +16,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -24,6 +28,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          <h2 className="text-xl font-bold text-white">CELESTIA ROOFWORKS</h2>
           <div className="hidden sm:flex space-x-4">
             <a
               href="#hero"
@@ -50,7 +55,6 @@ const Navbar = () => {
               Contacto
             </a>
           </div>
-
           <div className="hidden sm:block">
             <a
               href="#contacto"
@@ -68,35 +72,41 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
       {isOpen && (
         <div className="sm:hidden bg-black bg-opacity-75 text-white">
           <a
-            href="#inicio"
+            href="#hero"
             className="block px-4 py-2 hover:bg-gray-800 font-lora"
+            onClick={handleLinkClick}
           >
             Inicio
           </a>
           <a
             href="#servicios"
             className="block px-4 py-2 hover:bg-gray-800 font-lora"
+            onClick={handleLinkClick}
           >
             Servicios
           </a>
           <a
             href="#proyectos"
             className="block px-4 py-2 hover:bg-gray-800 font-lora"
+            onClick={handleLinkClick}
           >
             Proyectos
           </a>
           <a
             href="#contacto"
             className="block px-4 py-2 hover:bg-gray-800 font-lora"
+            onClick={handleLinkClick}
           >
             Contacto
           </a>
           <a
             href="#cotizacion"
             className="block px-4 py-2 bg-emerald-700 hover:bg-emerald-600 font-lora"
+            onClick={handleLinkClick}
           >
             Solicitar Cotización
           </a>

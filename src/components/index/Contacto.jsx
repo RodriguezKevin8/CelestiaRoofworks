@@ -8,6 +8,7 @@ const ContactSection = () => {
     phone: "",
     message: "",
   });
+  const [alert, setAlert] = useState({ visible: false, message: "" });
 
   const validateForm = () => {
     const newErrors = {};
@@ -40,7 +41,13 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      alert("Formulario enviado con éxito.");
+      setAlert({
+        visible: true,
+        message:
+          "¡Gracias! Tu mensaje ha sido enviado. Nos pondremos en contacto contigo pronto.",
+      });
+
+      setTimeout(() => setAlert({ visible: false, message: "" }), 5000);
       setFormData({ name: "", email: "", phone: "", message: "" });
       setErrors({});
     }
@@ -73,7 +80,7 @@ const ContactSection = () => {
               Nuestra misión es proteger y embellecer hogares con diseños
               exclusivos y materiales de la más alta calidad.
             </p>
-            <p className="flex items-center gap-2 font-hind ">
+            <p className="flex items-center gap-2 font-hind">
               📍 Dirección: Ciudad, País
             </p>
             <p className="flex items-center gap-2 font-hind">
@@ -83,7 +90,7 @@ const ContactSection = () => {
 
           <div className="lg:w-1/2 h-72">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126740.75052936897!2d-74.00622603777942!3d40.7127281199724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af18e71d4d%3A0xe3e0525b428400b2!2sNew%20York%2C%20EE.%20UU.!5e0!3m2!1ses!2s!4v1696969085921!5m2!1ses!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24721.285120461842!2d-89.59149025063817!3d13.986996357279265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e8a88f74c611%3A0x334dedcda18267cd!2sSanta%20Ana!5e1!3m2!1ses!2ssv!4v1733504641666!5m2!1ses!2ssv"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -92,6 +99,7 @@ const ContactSection = () => {
             ></iframe>
           </div>
         </div>
+
         <div className="flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-24 text-center lg:text-left py-12">
           <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
             <h3 className="text-2xl font-bold mb-4 font-ptSerif">
@@ -109,11 +117,18 @@ const ContactSection = () => {
               posible.
             </p>
           </div>
+
           <form
             className="lg:w-1/2 w-full max-w-lg bg-opacity-90"
             onSubmit={handleSubmit}
             noValidate
           >
+            {alert.visible && (
+              <div className="mb-4 p-4 bg-emerald-800 text-white rounded-lg shadow-lg animate-fade-in">
+                {alert.message}
+              </div>
+            )}
+
             <div className="grid grid-cols-1 gap-6">
               <div className="relative border-b border-gray-500">
                 <input

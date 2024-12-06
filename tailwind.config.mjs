@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "deep-green": "#212e1d", // Verde oscuro
+        "deep-green": "#212e1d",
       },
       animation: {
         "infinite-scroll": "scroll 30s linear infinite",
