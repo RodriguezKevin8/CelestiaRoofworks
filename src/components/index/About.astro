@@ -1,35 +1,102 @@
-<section class="bg-deep-green text-white py-5 px-4 md:py-8">
-  <div class="container mx-auto flex flex-col lg:flex-row lg:items-center gap-8">
-    <div
-      class="w-full lg:w-1/2 flex flex-col justify-center opacity-0 translate-y-[-50px] lg:translate-x-[-50px] transition-all duration-700"
-      data-animate="fade-up"
+---
+// Arreglo de imágenes
+const images = [
+  "https://images.pexels.com/photos/789380/pexels-photo-789380.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "https://images.pexels.com/photos/11860026/pexels-photo-11860026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/13585248/pexels-photo-13585248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/29594604/pexels-photo-29594604/free-photo-of-pasillo-adornado-con-candelabros-lujosos-y-obras-de-arte.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/27466746/pexels-photo-27466746/free-photo-of-rico-iluminacion-techo-decoracion.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/2187662/pexels-photo-2187662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+];
+---
+
+<div class="bg-deep-green text-white py-12 px-6">
+  <div class="container mx-auto flex flex-col lg:flex-row items-center gap-12">
+    <!-- Texto -->
+    <div 
+      class="lg:w-1/2 text-center lg:text-left opacity-0 translate-y-10 transition-all duration-700" 
+      data-animate
     >
-      <h2 class="text-3xl font-bold mb-4 font-ptSerif text-center lg:text-left break-words">
-        CELESTIA ROOFWORKS
-      </h2>
-      <p class="text-md mb-4 font-hind text-center lg:text-left leading-relaxed break-words">
-        Inspiramos nuevos techos en obras de arte. Somos una empresa dedicada a
+      <h3 class="text-3xl font-bold mb-6 font-ptSerif">CELESTIA ROOFWORKS</h3>
+      <p class="text-lg mb-6 font-hind leading-7">
+        Transformamos techos en obras de arte. Somos una empresa dedicada a
         ofrecer soluciones de techado premium que combinan innovación, estética
         y funcionalidad. Nuestra misión es proteger y embellecer hogares con
         diseños exclusivos y materiales de la más alta calidad.
       </p>
-      <p class="text-md font-hind text-center lg:text-left leading-relaxed break-words">
+      <p class="text-lg font-hind leading-7">
         Con un equipo de expertos apasionados por la excelencia, trabajamos
         para garantizar que cada proyecto refleje el lujo, la durabilidad y la
-        sostenibilidad que nuestros clientes merecen. Desde techos industriales
-        hasta residenciales, ofrecemos asesoría personalizada para superar las
-        expectativas en cada detalle.
+        sostenibilidad que nuestros clientes merecen. Desde techos
+        tradicionales hasta sistemas modernos y ecológicos, nos esforzamos por
+        superar las expectativas en cada detalle.
       </p>
     </div>
-    <div
-      class="w-full lg:w-1/2 flex justify-center mx-auto opacity-0 translate-y-[50px] lg:translate-x-[50px] transition-all duration-700"
-      data-animate="fade-up"
+
+    <!-- Imagen -->
+    <div 
+      class="lg:w-1/2 flex justify-center opacity-0 translate-y-10 transition-all duration-700" 
+      data-animate
     >
       <img
-        src="https://pub-c0f5f950f13841e8b14919b84237d411.r2.dev/im4.webp"
+        src="https://pub-c3fe0ab99621442da216bf5e63aceeea.r2.dev/im4.webp"
         alt="Techo moderno"
-        class="w-full max-w-[90%] sm:max-w-sm lg:max-w-full h-auto rounded-lg shadow-lg object-contain"
+        class="max-w-md w-full h-auto rounded-lg shadow-lg object-cover"
       />
     </div>
   </div>
-</section>
+
+  <!-- Galería de imágenes -->
+  <div class="bg-deep-green container mx-auto px-5 py-8 lg:px-32 lg:pt-24">
+    <div class="-m-1 flex flex-wrap md:-m-2">
+      <div 
+        class="flex w-1/2 flex-wrap opacity-0 translate-y-10 transition-all duration-700" 
+        data-animate
+      >
+        <div class="w-1/2 p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-cover object-center"
+            src={images[0]} />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-cover object-center"
+            src={images[1]} />
+        </div>
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-cover object-center"
+            src={images[2]} />
+        </div>
+      </div>
+
+      <!-- Segunda columna -->
+      <div 
+        class="flex w-1/2 flex-wrap opacity-0 translate-y-10 transition-all duration-700" 
+        data-animate
+      >
+        <div class="w-full p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-cover object-center"
+            src={images[3]} />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-cover object-center"
+            src={images[4]} />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <img
+            alt="gallery"
+            class="block h-full w-full rounded-lg object-cover object-center"
+            src={images[5]} />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
