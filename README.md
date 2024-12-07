@@ -2,9 +2,7 @@
 
 ## 📖 Descripción del Proyecto
 
-**Celestia Roofworks** es una página web diseñada para una empresa que ofrece soluciones premium de techado. Con un enfoque en la estética, funcionalidad y sostenibilidad, este proyecto incluye secciones de servicios, proyectos, contacto y más. Está construido utilizando tecnologías modernas como **Astro** y **React** para ofrecer un rendimiento optimizado y una experiencia interactiva fluida.
-
----
+## **Celestia Roofworks** es una página web diseñada para una empresa que ofrece soluciones premium de techado. Con un enfoque en la estética, funcionalidad y sostenibilidad, este proyecto incluye secciones de servicios, proyectos, contacto y más. Está construido utilizando tecnologías modernas como **Astro** y **React** para ofrecer un rendimiento optimizado y una experiencia interactiva fluida.
 
 ## 🚀 Instrucciones para Visualizar el Proyecto
 
@@ -82,7 +80,9 @@ Estas tecnologías y herramientas aseguran que **Celestia Roofworks** sea eficie
 ├── /src
 │   ├── /assets
 │   ├── /components
+│   ├── /data
 │   ├── /elements
+│   ├── /global
 │   ├── /layouts
 │   └── /pages
 └── package.json
