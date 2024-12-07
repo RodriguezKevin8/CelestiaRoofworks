@@ -88,3 +88,7 @@ Estas tecnologías y herramientas aseguran que **Celestia Roofworks** sea eficie
 └── package.json
 
 ```
+
+### 🏎️ Pruebas de Rendimiento
+
+![Pruebas de rendimiento](./src/assets/carga.png)

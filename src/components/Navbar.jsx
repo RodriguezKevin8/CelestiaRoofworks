@@ -28,7 +28,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <h2 className="text-xl font-bold text-white">CELESTIA ROOFWORKS</h2>
+          <a href="#hero">
+            <h2 className="text-xl font-bold text-white">CELESTIA ROOFWORKS</h2>
+          </a>
           <div className="hidden sm:flex space-x-4">
             <a
               href="#hero"
